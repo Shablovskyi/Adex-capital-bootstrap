@@ -1,0 +1,26 @@
+.navbar{
+  padding: 0;
+  
+  .logo{
+    height: 53px;
+    width: 137px;
+  }
+
+  .dropdown-menu{
+    padding: 8px;
+    background-color: $main-background;
+    border: 1px solid;
+    border-radius: 20px;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: $dropdown-border;
+  
+    .dropdown-item {
+      &:hover{
+          background: none;
+      }
+    }
+  }
+}
+
+
