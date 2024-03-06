@@ -1,4 +1,18 @@
 @charset "UTF-8";
+@font-face {
+  font-display: swap;
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -18792,22 +18806,8 @@ progress {
     display: none !important;
   }
 }
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-SemiBold.eot");
-  src: local("Gilroy SemiBold"), local("Gilroy-SemiBold"), url("Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("Gilroy-SemiBold.woff") format("woff"), url("Gilroy-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-Regular.eot");
-  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("Gilroy-Regular.woff") format("woff"), url("Gilroy-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 body {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy";
   background-color: #1D1E22;
 }
 
@@ -37624,22 +37624,8 @@ progress {
     display: none !important;
   }
 }
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-SemiBold.eot");
-  src: local("Gilroy SemiBold"), local("Gilroy-SemiBold"), url("Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("Gilroy-SemiBold.woff") format("woff"), url("Gilroy-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-Regular.eot");
-  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("Gilroy-Regular.woff") format("woff"), url("Gilroy-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 body {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy";
   background-color: #1D1E22;
 }
 
@@ -37678,34 +37664,16 @@ p {
 
 .dropdown-menu {
   padding: 8px;
-  background-color: #1D1E22;
-  border: 1px solid;
-  border-radius: 20px;
-  border-image-slice: 1;
-  border-width: 1px;
-  border-image-source: linear-gradient(90deg, rgb(83, 95, 230) 0%, rgba(32, 193, 207, 0.33) 50%, rgba(83, 95, 230, 0.37) 100%);
 }
 
-.dropdown-item:hover {
-  background: none;
-}
-
-.navbar-brand {
-  margin-right: 32px;
-}
-
-.navbar-nav {
-  gap: 32px;
-}
-
-.social__items {
+.social-links {
   display: flex;
   gap: 8px;
-  justify-content: center;
 }
-.social__items li a {
-  padding: 10px;
+.social-links .nav-link {
   background: linear-gradient(90deg, rgba(83, 95, 230, 0.85) 0%, rgba(32, 193, 207, 0.57) 100%);
 }
-
-/*# sourceMappingURL=style.css.map */
+.social-links .nav-link .social-icon {
+  height: 24px;
+  width: 24px;
+}
