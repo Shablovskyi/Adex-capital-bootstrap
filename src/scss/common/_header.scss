@@ -5,8 +5,8 @@
   width: 137px;
 }
 
-.nav-link{
-  &:hover{
+.nav-link {
+  &:hover {
     color: $primary !important;
   }
 }
@@ -17,14 +17,14 @@
   border-image-slice: 1;
 }
 
-.dropdown-item{
-  &:hover{
+.dropdown-item {
+  &:hover {
     background: none;
-    color: $primary !important; 
+    color: $primary !important;
   }
 }
 
-.social-link__item{
+.social-link__item {
   height: 32px;
   width: 32px;
   .social-link {
@@ -36,33 +36,23 @@
   }
 }
 
-.change-lang{
+.change-lang {
   background: none;
   border: none;
-  &:hover, &:active{
+  &:hover,
+  &:active {
     background: none;
     border: none;
   }
-
 }
 
 .authorization {
-  .btn{
+  .btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.62;
     &:nth-child(1) {
-    background: rgb(83, 95, 230);
-    background: linear-gradient(
-      121deg,
-      rgba(83, 95, 230, 0.84) 0%,
-      rgba(32, 193, 207, 0.57) 100%
-    );
-    border-radius: 30px 16px 16px 16px;
-  }
-
-  &:nth-child(2){
-    border: 1px solid;
-    border-radius: 16px;
-
-    &:hover{
+      width: 153px;
       background: rgb(83, 95, 230);
       background: linear-gradient(
         121deg,
@@ -71,8 +61,29 @@
       );
       border-radius: 30px 16px 16px 16px;
     }
-  }
-  }
 
+    &:nth-child(2) {
+      width: 98px;
+      border: 1px solid;
+      border-radius: 16px;
+
+      /** TEXT GRADIENT */
+      color: #535fe6;
+      background-image: -webkit-linear-gradient(0deg, #535fe6 0%, #20c1cf 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+
+      &:hover {
+        /** TEXT GRADIENT */
+        color: #fff;
+        background-image: -webkit-linear-gradient(0deg, #fff 0%, #fff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
 }
-

@@ -18797,7 +18797,8 @@ body {
   background-color: #1D1E22;
 }
 
-menu, ul {
+menu,
+ul {
   padding: 0;
   margin: 0;
 }
@@ -18806,7 +18807,17 @@ li {
   list-style: none;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   font-weight: 600;
 }
 
@@ -18817,12 +18828,32 @@ p {
   color: #fff;
 }
 
+input::placeholder {
+  color: #5E647A !important;
+}
+
 .rounded-6 {
-  border-radius: 12px;
+  border-radius: 0.75rem;
+}
+
+.p-6 {
+  padding: 4rem;
 }
 
 .ps-6 {
-  padding-left: 38px;
+  padding-left: 2.37rem;
+}
+
+.py-6 {
+  padding: 2.5rem 0 2.5rem;
+}
+
+.pt-6 {
+  padding-top: 5.87rem;
+}
+
+.pe-6 {
+  padding-right: 5rem;
 }
 
 /*!
@@ -37623,7 +37654,8 @@ body {
   background-color: #1D1E22;
 }
 
-menu, ul {
+menu,
+ul {
   padding: 0;
   margin: 0;
 }
@@ -37632,7 +37664,17 @@ li {
   list-style: none;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   font-weight: 600;
 }
 
@@ -37643,12 +37685,32 @@ p {
   color: #fff;
 }
 
+input::placeholder {
+  color: #5E647A !important;
+}
+
 .rounded-6 {
-  border-radius: 12px;
+  border-radius: 0.75rem;
+}
+
+.p-6 {
+  padding: 4rem;
 }
 
 .ps-6 {
-  padding-left: 38px;
+  padding-left: 2.37rem;
+}
+
+.py-6 {
+  padding: 2.5rem 0 2.5rem;
+}
+
+.pt-6 {
+  padding-top: 5.87rem;
+}
+
+.pe-6 {
+  padding-right: 5rem;
 }
 
 .logo {
@@ -37692,17 +37754,77 @@ p {
   border: none;
 }
 
+.authorization .btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.62;
+}
 .authorization .btn:nth-child(1) {
+  width: 153px;
   background: rgb(83, 95, 230);
   background: linear-gradient(121deg, rgba(83, 95, 230, 0.84) 0%, rgba(32, 193, 207, 0.57) 100%);
   border-radius: 30px 16px 16px 16px;
 }
 .authorization .btn:nth-child(2) {
+  width: 98px;
   border: 1px solid;
   border-radius: 16px;
+  /** TEXT GRADIENT */
+  color: #535fe6;
+  background-image: -webkit-linear-gradient(0deg, #535fe6 0%, #20c1cf 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 .authorization .btn:nth-child(2):hover {
-  background: rgb(83, 95, 230);
-  background: linear-gradient(121deg, rgba(83, 95, 230, 0.84) 0%, rgba(32, 193, 207, 0.57) 100%);
-  border-radius: 30px 16px 16px 16px;
+  /** TEXT GRADIENT */
+  color: #fff;
+  background-image: -webkit-linear-gradient(0deg, #fff 0%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.container-create h2, .container-create .h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+}
+.container-create h2 span, .container-create .h2 span {
+  font-weight: 400;
+}
+.container-create p {
+  max-width: 560px;
+  color: #5E647A;
+}
+
+.input-registration {
+  border-left: none;
+}
+
+.title-section {
+  max-height: 688px;
+}
+.title-section h1, .title-section .h1 {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 1.19;
+}
+.title-section h2, .title-section .h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.title-wallet {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
 }

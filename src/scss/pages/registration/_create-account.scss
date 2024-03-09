@@ -1,0 +1,45 @@
+.brand-icon{
+  width: 32px;
+  height: 32px;
+}  
+
+.container-create{
+  h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    span{
+      font-weight: 400;
+    }
+  }
+  
+  p{
+    max-width: 560px;
+    color: $gray;
+  }
+}
+
+.input-registration{
+  border-left: none;
+}
+
+.title-section{
+  max-height: 688px;
+  h1{
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 1.19;
+  }
+
+  h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+.title-wallet{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
