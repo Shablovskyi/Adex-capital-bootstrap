@@ -1,0 +1,99 @@
+footer {
+  margin-top: 277px;
+  background-color: rgba(35, 37, 47, 0.5);
+}
+
+.footer-top__container {
+  margin-bottom: 86px;
+
+  div {
+    position: relative;
+    left: -100px;
+
+    img {
+      height: 32px;
+    }
+  }
+}
+
+.footer-center__container {
+  .our-company-link {
+    font-weight: 600;
+    color: #535fe6;
+    background-image: -webkit-linear-gradient(0deg, #535fe6 0%, #20c1cf 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    p {
+      border-bottom: 1px dotted;
+      color: #535fe6;
+      background-image: -webkit-linear-gradient(0deg, #535fe6 0%, #20c1cf 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.footer-address {
+  color: $gray;
+}
+
+.footer-lists{
+  gap: 83px;
+  .footer-links {
+  li {
+    a {
+      font-weight: 600;
+      text-decoration: none;
+      color: $gray;
+    }
+  }
+}
+}
+
+.footer-center__btn{
+  a{
+    width: 196px;
+    font-weight: 600;
+    color: #535fe6;
+    border: 1px solid;
+    border-radius: 20px;
+    background-image: -webkit-linear-gradient(0deg, #535fe6 0%, #20c1cf 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    &:hover {
+      /** TEXT GRADIENT */
+      color: #fff;
+      border: 1px solid;
+      border-radius: 20px;
+      background-image: -webkit-linear-gradient(0deg, #fff 0%, #fff 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+  }
+}
+}
+
+.footer-bottom__container{
+  p{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 2.33;
+  }
+}
+
+@media (max-width: 991px) {
+  footer{
+    margin-top: 60px;
+  }
+}
+
+

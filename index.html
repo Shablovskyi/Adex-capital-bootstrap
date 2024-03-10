@@ -18,7 +18,7 @@
               class="navbar navbar-expand-md bg-transparent"
               data-bs-theme="dark"
             >
-              <div class="container-fluid px-1">
+              <div class="container-fluid px-2">
                 <a class="navbar-brand me-5" href="#">
                   <svg class="logo">
                     <use xlink:href="./assets/images/icon.svg#icon-logo"></use>
@@ -71,7 +71,7 @@
                           ></use>
                         </svg>
                       </a>
-                      <ul class="dropdown-menu bg-transparent">
+                      <ul class="dropdown-menu">
                         <li>
                           <a class="dropdown-item text-white" href="#">FAQ</a>
                         </li>
@@ -144,8 +144,26 @@
               </a>
 
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">English</a></li>
-                <li><a class="dropdown-item" href="#">Ukrainian</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <svg width="24" height="24">
+                      <use
+                        xlink:href="./assets/images/icon.svg#icon-united-kingdom"
+                      ></use>
+                    </svg>
+                    English</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <svg width="24" height="24">
+                      <use
+                        xlink:href="./assets/images/icon.svg#icon-united-kingdom"
+                      ></use>
+                    </svg>
+                    Ukrainian</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -165,9 +183,9 @@
     <main>
       <!-- TODO Create account -->
       <div class="container text-cente">
-        <div class="row">
-          <div
-            class="container px-2 pt-6 text-start col-lg-7 order-last order-lg-first pe-0 pe-md-5 container-create"
+        <div class="row ps-2">
+          <form
+            class="container pt-6 text-start col-lg-7 order-last order-lg-first px-0 pe-md-5 container-create"
           >
             <div class="brand-icon">
               <svg height="32px" width="32px">
@@ -185,11 +203,36 @@
             </p>
             <div class="row m-0 mb-3">
               <div class="container col-12 mt-3">
-                <div class="row  ps-md-4">
-                  <div class="col-xl-6 px-0">
-                    <div class="input-group mb-3 pe-xl-3" data-bs-theme="dark">
+                <div class="row ps-md-4">
+                  <div class="col-xl-6 px-0 pe-xl-3">
+                    <div
+                      class="input-group mb-3 costom-hover"
+                      data-bs-theme="dark"
+                    >
+                      <span
+                        class="input-group-text bg-transparent"
+                        id="basic-addon1"
+                      >
+                        <svg
+                          class="icon"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.8182 21C3.73291 21 2 19.4115 2 12C2 9.96306 2.13089 8.36595 2.48858 7.12078C3.40443 8.03897 4.56014 9.1431 5.8154 10.1266C7.59572 11.5214 9.75188 12.8182 11.8182 12.8182C13.8845 12.8182 16.0406 11.5214 17.821 10.1266C19.0762 9.1431 20.2319 8.03897 21.1478 7.12078C21.5055 8.36595 21.6364 9.96306 21.6364 12C21.6364 19.4115 19.9035 21 11.8182 21Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M20.4347 5.51436C19.476 6.49144 18.2044 7.74736 16.8118 8.83847C15.0575 10.2129 13.2864 11.1818 11.8182 11.1818C10.3499 11.1818 8.57882 10.2129 6.8246 8.83847C5.43195 7.74736 4.16034 6.49144 3.20163 5.51436C4.5011 3.55031 7.05931 3 11.8182 3C16.5771 3 19.1353 3.55031 20.4347 5.51436Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
                       <input
-                        type="text"
+                        type="email"
                         class="form-control bg-transparent"
                         aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-default"
@@ -197,8 +240,37 @@
                       />
                     </div>
                   </div>
-                  <div class="col-xl-6 px-0">
-                    <div class="input-group mb-3 ps-xl-3" data-bs-theme="dark">
+                  <div class="col-xl-6 px-0 ps-xl-3">
+                    <div
+                      class="input-group mb-3 costom-hover"
+                      data-bs-theme="dark"
+                    >
+                      <span
+                        class="input-group-text bg-transparent"
+                        id="basic-addon1"
+                      >
+                        <svg
+                          class="icon"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.16667 7C5.16667 9.76142 7.40524 12 10.1667 12C12.9281 12 15.1667 9.76142 15.1667 7C15.1667 4.23858 12.9281 2 10.1667 2C7.40524 2 5.16667 4.23858 5.16667 7Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M1 17.8333C1 21.2646 2.61792 22 10.1667 22C17.7154 22 19.3333 21.2646 19.3333 17.8333C19.3333 14.4021 17.7154 13.6667 10.1667 13.6667C2.61792 13.6667 1 14.4021 1 17.8333Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M16 10.3333C16 9.8731 16.3731 9.5 16.8333 9.5H18.5V7.83333C18.5 7.3731 18.8731 7 19.3333 7C19.7936 7 20.1667 7.3731 20.1667 7.83333V9.5H21.8333C22.2936 9.5 22.6667 9.8731 22.6667 10.3333C22.6667 10.7936 22.2936 11.1667 21.8333 11.1667H20.1667V12.8333C20.1667 13.2936 19.7936 13.6667 19.3333 13.6667C18.8731 13.6667 18.5 13.2936 18.5 12.8333V11.1667H16.8333C16.3731 11.1667 16 10.7936 16 10.3333Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
                       <input
                         type="text"
                         class="form-control bg-transparent"
@@ -212,28 +284,110 @@
               </div>
               <div class="container col-12">
                 <div class="row ps-md-4">
-                  <div class="col-xl-6 px-0">
-                    <div class="input-group mb-3 pe-xl-3" data-bs-theme="dark">
+                  <div class="col-xl-6 px-0 pe-xl-3">
+                    <div
+                      class="input-group mb-3 costom-hover costom-input__btn"
+                      data-bs-theme="dark"
+                    >
+                      <span
+                        class="input-group-text bg-transparent"
+                        id="basic-addon1"
+                      >
+                        <svg
+                          class="icon"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.3333 14.5C10.3333 15.4205 11.0795 16.1667 12 16.1667C12.9205 16.1667 13.6667 15.4205 13.6667 14.5C13.6667 13.5795 12.9205 12.8333 12 12.8333C11.0795 12.8333 10.3333 13.5795 10.3333 14.5Z"
+                            fill="white"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9911 3.46049C17.0403 4.39308 17.7358 5.74521 17.8238 7.46024C21.1407 8.24353 22 10.1905 22 14.5C22 20.6762 20.235 22 12 22C3.765 22 2 20.6762 2 14.5C2 10.1905 2.85929 8.24353 6.17615 7.46024C6.26423 5.74521 6.9597 4.39308 8.00886 3.46049C9.11764 2.47491 10.5724 2 12 2C13.4276 2 14.8824 2.47491 15.9911 3.46049ZM12 7C10.3879 7 9.02381 7.05073 7.87232 7.17865C8.00779 6.07798 8.48449 5.26764 9.11614 4.70617C9.88236 4.02509 10.9276 3.66667 12 3.66667C13.0724 3.66667 14.1176 4.02509 14.8839 4.70617C15.5155 5.26764 15.9922 6.07798 16.1277 7.17865C14.9762 7.05073 13.6121 7 12 7ZM8.66667 14.5C8.66667 16.3409 10.1591 17.8333 12 17.8333C13.8409 17.8333 15.3333 16.3409 15.3333 14.5C15.3333 12.6591 13.8409 11.1667 12 11.1667C10.1591 11.1667 8.66667 12.6591 8.66667 14.5Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
                       <input
-                        type="text"
+                        type="password"
                         class="form-control bg-transparent"
                         aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-default"
                         placeholder="Enter password"
                       />
-                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                      <a
+                        class="input-group-text bg-transparent"
+                        id="basic-addon1"
+                      >
+                        <svg
+                          class="icon"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <use href="./assets/images/icon.svg#icon-eye"></use>
+                        </svg>
+                      </a>
                     </div>
                   </div>
-                  <div class="col-xl-6 px-0">
-                    <div class="input-group mb-3 ps-xl-3" data-bs-theme="dark">
+                  <div class="col-xl-6 px-0 ps-xl-3">
+                    <div
+                      class="input-group mb-3 costom-hover costom-input__btn"
+                      data-bs-theme="dark"
+                    >
+                      <span
+                        class="input-group-text bg-transparent"
+                        id="basic-addon1"
+                      >
+                        <svg
+                          class="icon"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.3333 14.5C10.3333 15.4205 11.0795 16.1667 12 16.1667C12.9205 16.1667 13.6667 15.4205 13.6667 14.5C13.6667 13.5795 12.9205 12.8333 12 12.8333C11.0795 12.8333 10.3333 13.5795 10.3333 14.5Z"
+                            fill="white"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9911 3.46049C17.0403 4.39308 17.7358 5.74521 17.8238 7.46024C21.1407 8.24353 22 10.1905 22 14.5C22 20.6762 20.235 22 12 22C3.765 22 2 20.6762 2 14.5C2 10.1905 2.85929 8.24353 6.17615 7.46024C6.26423 5.74521 6.9597 4.39308 8.00886 3.46049C9.11764 2.47491 10.5724 2 12 2C13.4276 2 14.8824 2.47491 15.9911 3.46049ZM12 7C10.3879 7 9.02381 7.05073 7.87232 7.17865C8.00779 6.07798 8.48449 5.26764 9.11614 4.70617C9.88236 4.02509 10.9276 3.66667 12 3.66667C13.0724 3.66667 14.1176 4.02509 14.8839 4.70617C15.5155 5.26764 15.9922 6.07798 16.1277 7.17865C14.9762 7.05073 13.6121 7 12 7ZM8.66667 14.5C8.66667 16.3409 10.1591 17.8333 12 17.8333C13.8409 17.8333 15.3333 16.3409 15.3333 14.5C15.3333 12.6591 13.8409 11.1667 12 11.1667C10.1591 11.1667 8.66667 12.6591 8.66667 14.5Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
                       <input
-                        type="text"
+                        type="password"
                         class="form-control bg-transparent"
                         aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-default"
                         placeholder="Repeat password"
                       />
-                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                      <a
+                        class="input-group-text bg-transparent"
+                        id="basic-addon1"
+                      >
+                        <svg
+                          class="icon"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <use
+                            href="./assets/images/icon.svg#icon-eye-closed"
+                          ></use>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -242,57 +396,615 @@
             <div class="container">
               <h3 class="ps-md-3 text-white title-wallet">My wallets</h3>
               <div class="row pt-3 ps-md-4">
-                <div class="input-group mb-3 px-0" data-bs-theme="dark">
-                  <span class="input-group-text bg-transparent" id="basic-addon1">@</span>
-                  <input type="text" class="form-control bg-transparent" placeholder="Enter wallet number" aria-label="Wallet" aria-describedby="basic-addon1">
+                <div
+                  class="input-group mb-3 px-0 wallet-input"
+                  data-bs-theme="dark"
+                >
+                  <span
+                    class="input-group-text bg-transparent"
+                    id="basic-addon1"
+                  >
+                    <svg
+                      class="icon"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <use
+                        xlink:href="./assets/images/icon.svg#icon-binance-coin"
+                      ></use>
+                    </svg>
+                    Binance coin
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    placeholder="Enter wallet number"
+                    aria-label="Wallet"
+                    aria-describedby="basic-addon1"
+                  />
                 </div>
-                <div class="input-group mb-3 px-0" data-bs-theme="dark">
-                  <span class="input-group-text bg-transparent" id="basic-addon1">@</span>
-                  <input type="text" class="form-control bg-transparent" placeholder="Enter wallet number" aria-label="Wallet" aria-describedby="basic-addon1">
+                <div
+                  class="input-group mb-3 px-0 wallet-input"
+                  data-bs-theme="dark"
+                >
+                  <span
+                    class="input-group-text bg-transparent"
+                    id="basic-addon1"
+                  >
+                    <svg
+                      class="icon"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <use
+                        xlink:href="./assets/images/icon.svg#icon-bitcoin"
+                      ></use>
+                    </svg>
+                    Bitcoin
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    placeholder="Enter wallet number"
+                    aria-label="Wallet"
+                    aria-describedby="basic-addon1"
+                  />
                 </div>
-                <div class="input-group mb-3 px-0" data-bs-theme="dark">
-                  <span class="input-group-text bg-transparent" id="basic-addon1">@</span>
-                  <input type="text" class="form-control bg-transparent" placeholder="Enter wallet number" aria-label="Wallet" aria-describedby="basic-addon1">
+                <div
+                  class="input-group mb-3 px-0 wallet-input"
+                  data-bs-theme="dark"
+                >
+                  <span
+                    class="input-group-text bg-transparent"
+                    id="basic-addon1"
+                  >
+                    <svg
+                      class="icon"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <use
+                        xlink:href="./assets/images/icon.svg#icon-bitcoin-cash"
+                      ></use>
+                    </svg>
+                    Bitcoin cash
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    placeholder="Enter wallet number"
+                    aria-label="Wallet"
+                    aria-describedby="basic-addon1"
+                  />
                 </div>
-                <div class="input-group mb-3 px-0" data-bs-theme="dark">
-                  <span class="input-group-text bg-transparent" id="basic-addon1">@</span>
-                  <input type="text" class="form-control bg-transparent" placeholder="Enter wallet number" aria-label="Wallet" aria-describedby="basic-addon1">
+                <div
+                  class="input-group mb-3 px-0 wallet-input"
+                  data-bs-theme="dark"
+                >
+                  <span
+                    class="input-group-text bg-transparent"
+                    id="basic-addon1"
+                  >
+                    <svg
+                      class="icon"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <use
+                        xlink:href="./assets/images/icon.svg#icon-chainlink"
+                      ></use>
+                    </svg>
+                    Chainlink
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    placeholder="Enter wallet number"
+                    aria-label="Wallet"
+                    aria-describedby="basic-addon1"
+                  />
                 </div>
-                <div class="input-group mb-3 px-0" data-bs-theme="dark">
-                  <span class="input-group-text bg-transparent" id="basic-addon1">@</span>
-                  <input type="text" class="form-control bg-transparent" placeholder="Enter wallet number" aria-label="Wallet" aria-describedby="basic-addon1">
+                <div
+                  class="input-group mb-3 px-0 wallet-input"
+                  data-bs-theme="dark"
+                >
+                  <span
+                    class="input-group-text bg-transparent"
+                    id="basic-addon1"
+                  >
+                    <svg
+                      class="icon"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <use
+                        xlink:href="./assets/images/icon.svg#icon-dogecoin"
+                      ></use>
+                    </svg>
+                    Doge coin
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    placeholder="Enter wallet number"
+                    aria-label="Wallet"
+                    aria-describedby="basic-addon1"
+                  />
                 </div>
-                <div class="input-group mb-3 px-0" data-bs-theme="dark">
-                  <span class="input-group-text bg-transparent" id="basic-addon1">@</span>
-                  <input type="text" class="form-control bg-transparent" placeholder="Enter wallet number" aria-label="Wallet" aria-describedby="basic-addon1">
+                <div
+                  class="input-group mb-3 px-0 wallet-input"
+                  data-bs-theme="dark"
+                >
+                  <span
+                    class="input-group-text bg-transparent"
+                    id="basic-addon1"
+                  >
+                    <svg
+                      class="icon"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <use
+                        xlink:href="./assets/images/icon.svg#icon-ethereum"
+                      ></use>
+                    </svg>
+                    Ethereum
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    placeholder="Enter wallet number"
+                    aria-label="Wallet"
+                    aria-describedby="basic-addon1"
+                  />
                 </div>
-                <div class="input-group mb-3 px-0" data-bs-theme="dark">
-                  <span class="input-group-text bg-transparent" id="basic-addon1">@</span>
-                  <input type="text" class="form-control bg-transparent" placeholder="Enter wallet number" aria-label="Wallet" aria-describedby="basic-addon1">
+                <div
+                  class="input-group mb-3 px-0 wallet-input"
+                  data-bs-theme="dark"
+                >
+                  <span
+                    class="input-group-text bg-transparent"
+                    id="basic-addon1"
+                  >
+                    <svg
+                      class="icon"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <use
+                        xlink:href="./assets/images/icon.svg#icon-litecoin"
+                      ></use>
+                    </svg>
+                    Litecoin
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    placeholder="Enter wallet number"
+                    aria-label="Wallet"
+                    aria-describedby="basic-addon1"
+                  />
                 </div>
-                <div class="input-group mb-3 px-0" data-bs-theme="dark">
-                  <span class="input-group-text bg-transparent" id="basic-addon1">@</span>
-                  <input type="text" class="form-control bg-transparent" placeholder="Enter wallet number" aria-label="Wallet" aria-describedby="basic-addon1">
+                <div
+                  class="input-group mb-3 px-0 wallet-input"
+                  data-bs-theme="dark"
+                >
+                  <span
+                    class="input-group-text bg-transparent"
+                    id="basic-addon1"
+                  >
+                    <svg
+                      class="icon"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <use xlink:href="./assets/images/icon.svg#icon-neo"></use>
+                    </svg>
+                    Neo
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    placeholder="Enter wallet number"
+                    aria-label="Wallet"
+                    aria-describedby="basic-addon1"
+                  />
                 </div>
-                <div class="input-group mb-3 px-0" data-bs-theme="dark">
-                  <span class="input-group-text bg-transparent" id="basic-addon1">@</span>
-                  <input type="text" class="form-control bg-transparent" placeholder="Enter wallet number" aria-label="Wallet" aria-describedby="basic-addon1">
+                <div
+                  class="input-group mb-3 px-0 wallet-input"
+                  data-bs-theme="dark"
+                >
+                  <span
+                    class="input-group-text bg-transparent"
+                    id="basic-addon1"
+                  >
+                    <svg
+                      class="icon"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <use
+                        xlink:href="./assets/images/icon.svg#icon-tether"
+                      ></use>
+                    </svg>
+                    Tether
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    placeholder="Enter wallet number"
+                    aria-label="Wallet"
+                    aria-describedby="basic-addon1"
+                  />
                 </div>
-                <div class="input-group mb-3 px-0" data-bs-theme="dark">
-                  <span class="input-group-text bg-transparent" id="basic-addon1">@</span>
-                  <input type="text" class="form-control bg-transparent" placeholder="Enter wallet number" aria-label="Wallet" aria-describedby="basic-addon1">
+                <div
+                  class="input-group mb-4 px-0 wallet-input"
+                  data-bs-theme="dark"
+                >
+                  <span
+                    class="input-group-text bg-transparent"
+                    id="basic-addon1"
+                  >
+                    <svg
+                      class="icon"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <use
+                        xlink:href="./assets/images/icon.svg#icon-tron"
+                      ></use>
+                    </svg>
+                    Tron
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    placeholder="Enter wallet number"
+                    aria-label="Wallet"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div class="check my-4">
+                  <div class="form-check" data-bs-theme="dark">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label text-white"
+                      for="flexCheckDefault"
+                    >
+                      I agree to all statements incuded in
+                      <a href="#" class="text-primary">Terms of Use </a>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-center justify-content-md-start"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg col-3 py-3 mt-3 form-btn"
+                  >
+                    Start invesint now
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
+          </form>
           <div
-            class="col-lg-5 order-first order-lg-last text-start title-section p-6"
+            class="col-lg-5 order-first order-lg-last p-0 text-start title-section"
           >
-            <h1 class="text-white">Fast</h1>
-            <h2 class="text-white">registration</h2>
+            <div class="p-6 container-fast-registration">
+              <h1 class="text-white">Fast</h1>
+              <h2 class="text-white">registration</h2>
+              <div class="input-group mb-3 fast-reg-input" data-bs-theme="dark">
+                <span
+                  class="input-group-text text-white bg-transparent"
+                  id="basic-addon1"
+                >
+                  <svg
+                    class="icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.8182 21C3.73291 21 2 19.4115 2 12C2 9.96306 2.13089 8.36595 2.48858 7.12078C3.40443 8.03897 4.56014 9.1431 5.8154 10.1266C7.59572 11.5214 9.75188 12.8182 11.8182 12.8182C13.8845 12.8182 16.0406 11.5214 17.821 10.1266C19.0762 9.1431 20.2319 8.03897 21.1478 7.12078C21.5055 8.36595 21.6364 9.96306 21.6364 12C21.6364 19.4115 19.9035 21 11.8182 21Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M20.4347 5.51436C19.476 6.49144 18.2044 7.74736 16.8118 8.83847C15.0575 10.2129 13.2864 11.1818 11.8182 11.1818C10.3499 11.1818 8.57882 10.2129 6.8246 8.83847C5.43195 7.74736 4.16034 6.49144 3.20163 5.51436C4.5011 3.55031 7.05931 3 11.8182 3C16.5771 3 19.1353 3.55031 20.4347 5.51436Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+                <input
+                  type="email"
+                  class="form-control bg-transparent"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="input-group mb-3 fast-reg-input" data-bs-theme="dark">
+                <span class="input-group-text bg-transparent" id="basic-addon1">
+                  <svg
+                    class="icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.3333 14.5C10.3333 15.4205 11.0795 16.1667 12 16.1667C12.9205 16.1667 13.6667 15.4205 13.6667 14.5C13.6667 13.5795 12.9205 12.8333 12 12.8333C11.0795 12.8333 10.3333 13.5795 10.3333 14.5Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.9911 3.46049C17.0403 4.39308 17.7358 5.74521 17.8238 7.46024C21.1407 8.24353 22 10.1905 22 14.5C22 20.6762 20.235 22 12 22C3.765 22 2 20.6762 2 14.5C2 10.1905 2.85929 8.24353 6.17615 7.46024C6.26423 5.74521 6.9597 4.39308 8.00886 3.46049C9.11764 2.47491 10.5724 2 12 2C13.4276 2 14.8824 2.47491 15.9911 3.46049ZM12 7C10.3879 7 9.02381 7.05073 7.87232 7.17865C8.00779 6.07798 8.48449 5.26764 9.11614 4.70617C9.88236 4.02509 10.9276 3.66667 12 3.66667C13.0724 3.66667 14.1176 4.02509 14.8839 4.70617C15.5155 5.26764 15.9922 6.07798 16.1277 7.17865C14.9762 7.05073 13.6121 7 12 7ZM8.66667 14.5C8.66667 16.3409 10.1591 17.8333 12 17.8333C13.8409 17.8333 15.3333 16.3409 15.3333 14.5C15.3333 12.6591 13.8409 11.1667 12 11.1667C10.1591 11.1667 8.66667 12.6591 8.66667 14.5Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+                <input
+                  type="password"
+                  class="form-control bg-transparent"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default"
+                  placeholder="Enter password"
+                />
+                <a class="input-group-text bg-transparent" id="basic-addon1">
+                  <svg
+                    class="icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use href="./assets/images/icon.svg#icon-eye"></use>
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="d-flex justify-content-center justify-content-md-start"
+              >
+                <button
+                  type="button"
+                  class="btn btn-dark btn-lg col-3 py-3 mt-3 custom-btn"
+                >
+                  Get started with
+                  <svg
+                    class="icon ms-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use
+                      xlink:href="./assets/images/icon.svg#icon-logo-img"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+              <p
+                class="color-white d-flex justify-content-center justify-content-md-start fast-registration-text"
+              >
+                Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </main>
+    <!-- TODO Footer -->
+    <footer class="pt-5 pb-3">
+      <!-- TODO Footer top -->
+      <div
+        class="container-fluid p-0 mt-2 footer-top__container overflow-hidden"
+      >
+        <div class="d-flex gap-5">
+          <img
+            width="114"
+            src="./assets/images/Group 890.png"
+            alt="Perfect money"
+          />
+          <img
+            width="100"
+            src="./assets/images/logo-bitcoin 1.png"
+            alt="Bitcoin"
+          />
+          <img width="104" src="./assets/images/Group.png" alt="Chainlink" />
+          <img
+            width="113"
+            src="./assets/images/logo-litecoin 1.png"
+            alt="Litecoin"
+          />
+          <img width="138" src="./assets/images/Vector.png" alt="Ethereum" />
+          <img
+            width="70"
+            src="./assets/images/Tron.network_logo 1.png"
+            alt="Tron"
+          />
+          <img width="88" src="./assets/images/Group 400.png" alt="USDT" />
+          <img width="62" src="./assets/images/Group 401.png" alt="Neo" />
+          <img width="120" src="./assets/images/binance 1.png" alt="Binance" />
+          <img
+            width="128"
+            src="./assets/images/logo-dogecoin 1.png"
+            alt="Doge"
+          />
+          <img
+            width="85"
+            src="./assets/images/xrp-text-mark-black-1 1.png"
+            alt="XRP"
+          />
+          <img
+            width="123"
+            src="./assets/images/USD-Coin-Horizontal lockup 1.png"
+            alt="USDC"
+          />
+          <img
+            width="120"
+            src="./assets/images/uniswap.25a6babb 1.png"
+            alt="Uni"
+          />
+          <img
+            width="135"
+            src="./assets/images/logo-bitcoincash 1.png"
+            alt="BTC CASH"
+          />
+        </div>
+      </div>
+      <!-- TODO Footer center -->
+      <div class="container footer-center__container">
+        <div class="row">
+          <div class="col-sm-5 col-lg-2 mb-3">
+            <a href="#">
+              <svg
+              class="icon"
+              width="137"
+              height="53"
+              viewBox="0 0 137 53"
+              fill="none"
+            >
+              <use xlink:href="./assets/images/icon.svg#icon-logo"></use>
+            </svg>
+            </a>
+          </div>
+          <div class="col-sm-7 col-lg-3 mb-5 text-sm-end text-md-start">
+            <a href="#" class="d-flex our-company-link pb-4 justify-content-sm-end justify-content-md-start">
+              <p class="pb-2 m-0">Check our company</p>
+              <span>
+                <svg
+                  class="ms-3"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 -1.04907e-06C2.118 -1.85161e-07 -1.91299e-06 2.118 -1.04907e-06 12C-1.85161e-07 21.882 2.118 24 12 24C21.882 24 24 21.882 24 12C24 2.118 21.882 -1.91299e-06 12 -1.04907e-06ZM10.7071 7.29289L14.7071 11.2929C15.0976 11.6834 15.0976 12.3166 14.7071 12.7071L10.7071 16.7071C10.3166 17.0976 9.68342 17.0976 9.29289 16.7071C8.90237 16.3166 8.90237 15.6834 9.29289 15.2929L12.5858 12L9.29289 8.70711C8.90237 8.31658 8.90237 7.68342 9.29289 7.29289C9.68342 6.90237 10.3166 6.90237 10.7071 7.29289Z"
+                    fill="url(#paint0_linear_75_7487)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_75_7487"
+                      x1="16.9309"
+                      y1="7.35151"
+                      x2="5.33924"
+                      y2="23.4542"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#535FE6" stop-opacity="0.84" />
+                      <stop
+                        offset="1"
+                        stop-color="#20C1CF"
+                        stop-opacity="0.57"
+                      />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </span>
+            </a>
+            <p class="footer-address">
+              4517 Washington Ave. Manchester, Kentucky 39495
+            </p>
+          </div>
+          <div
+            class="col-sm-6 mb-5 col-lg-4 d-flex justify-content-center justify-content-md-start justify-content-lg-end footer-lists"
+          >
+            <ul class="footer-links d-flex flex-column gap-3">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Investment</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+            <ul class="footer-links d-flex flex-column gap-3">
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-center__btn col-sm-6 col-lg-3 text-center text-sm-end mb-5">
+            <a class="btn py-3" href="#" data-bs-theme="dark" role="button"
+              >Start Investment</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- TODO Footer bottom -->
+      <div class="container footer-bottom__container mb-3">
+        <div class="row align-items-center">
+          <div class="col-md-4 col-lg-5 col-xl-6 d-flex align-items-center">
+            <p class="m-0">&copy; 2021 Adex Capital Limited. All rights are reserved.</p>
+          </div>
+          <ul
+            class="d-flex col-6 col-md-4 col-xl-3 align-items-center justify-content-md-center justify-content-xxl-center gap-2"
+          >
+            <li class="pl-3 social-link__item">
+              <a class="nav-link social-link rounded-6" href="#">
+                <svg>
+                  <use href="./assets/images/icon.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link__item">
+              <a class="nav-link social-link rounded-6" href="#">
+                <svg>
+                  <use href="./assets/images/icon.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link__item">
+              <a class="nav-link social-link rounded-6" href="#">
+                <svg>
+                  <use href="./assets/images/icon.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link__item">
+              <a class="nav-link social-link rounded-6" href="#">
+                <svg>
+                  <use href="./assets/images/icon.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class=" d-flex col-6 col-md-4 col-lg-3 justify-content-center justify-content-lg-end gap-3">
+            <p class="mb-0">Terms & Conditions</p>
+            <p class="mb-0">Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

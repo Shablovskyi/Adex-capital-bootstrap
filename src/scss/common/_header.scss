@@ -6,18 +6,24 @@
 }
 
 .nav-link {
+  font-weight: 600;
   &:hover {
     color: $primary !important;
   }
 }
 
-.dropdown-menu {
-  border: 1px solid;
-  border-image: $dropdown-border;
-  border-image-slice: 1;
+.dropdown{
+  .btn{
+    font-weight: 600;
+  }
+}
+
+.dropdown-menu{
+  border-radius: 20px;
 }
 
 .dropdown-item {
+  font-weight: 600;
   &:hover {
     background: none;
     color: $primary !important;
