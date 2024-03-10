@@ -50,7 +50,7 @@
   border-radius: 20px;
   background: $main-background;
 
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     top: -1px;
@@ -77,7 +77,7 @@
   input {
     border: none;
 
-    &:focus{
+    &:focus {
       border-radius: 0 20px 20px 0;
     }
   }
@@ -90,13 +90,13 @@
   }
 }
 
-.wallet-input{
+.wallet-input {
   position: relative;
   height: 64px;
   border-radius: 20px;
   background: $main-background;
 
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     top: -1px;
@@ -108,7 +108,7 @@
     z-index: -1;
   }
 
-  span{
+  span {
     width: 230px;
     font-weight: 600;
     font-size: 16px;
@@ -116,31 +116,30 @@
     border-top: none;
     border-bottom: none;
     border-left: none;
-    svg{
+    svg {
       margin-right: 16px;
     }
-
   }
 
   input {
     border: none;
 
-    &:focus{
+    &:focus {
       border-radius: 0 20px 20px 0;
     }
   }
 }
 
-.form-btn{
+.form-btn {
   width: 252px;
   font-weight: 600;
   border-radius: 20px;
-  background: #535FE6;
+  background: #535fe6;
   position: relative;
   height: 64px;
   border-radius: 20px;
 
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     top: -1px;
@@ -150,25 +149,25 @@
     background: $dropdown-border;
     border-radius: 20px;
     z-index: -1;
-}
+  }
 }
 
 @media (max-width: 582px) {
-  .wallet-input{
-    span{
+  .wallet-input {
+    span {
       width: 150px;
     }
   }
 
-  .check{
-    label{
+  .check {
+    label {
       line-height: 1.75;
     }
   }
 }
 
-@media (max-width:425px) {
-  .container-create{
+@media (max-width: 425px) {
+  .container-create {
     padding-top: 40px;
   }
 }

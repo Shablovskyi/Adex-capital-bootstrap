@@ -42,21 +42,21 @@ footer {
   color: $gray;
 }
 
-.footer-lists{
+.footer-lists {
   gap: 83px;
   .footer-links {
-  li {
-    a {
-      font-weight: 600;
-      text-decoration: none;
-      color: $gray;
+    li {
+      a {
+        font-weight: 600;
+        text-decoration: none;
+        color: $gray;
+      }
     }
   }
 }
-}
 
-.footer-center__btn{
-  a{
+.footer-center__btn {
+  a {
     width: 196px;
     font-weight: 600;
     color: #535fe6;
@@ -78,12 +78,12 @@ footer {
       -webkit-background-clip: text;
       text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
+    }
   }
 }
-}
 
-.footer-bottom__container{
-  p{
+.footer-bottom__container {
+  p {
     font-weight: 600;
     font-size: 12px;
     line-height: 2.33;
@@ -91,9 +91,7 @@ footer {
 }
 
 @media (max-width: 991px) {
-  footer{
+  footer {
     margin-top: 60px;
   }
 }
-
-
