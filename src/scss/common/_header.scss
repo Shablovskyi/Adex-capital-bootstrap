@@ -1,65 +1,95 @@
 @import "./common";
 
-.navbar {
-  padding: 0;
-}
-
-.container-fluid {
-  background-color: $main-background;
-}
-
 .logo {
   height: 53px;
   width: 137px;
 }
 
-.dropdown-menu {
-  padding: 8px;
-  // position: relative;
-  // border-radius: 20px;
-  // background-color: $main-background;
-  // &::before{
-  //   position: absolute;
-  //   content: "";
-  //   background: $dropdown-border;
-  //   left: 0;
-  //   top: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   z-index: -1;
-  //   margin: -1px;
-  // }
+.nav-link {
+  font-weight: 600;
+  &:hover {
+    color: $primary !important;
+  }
 }
 
-.social-links {
-  display: flex;
-  gap: 8px;
-  .nav-link{
-    background: $social-icon-background;
+.dropdown {
+  .btn {
+    font-weight: 600;
+  }
+}
 
-    .social-icon {
-      height: 24px;
-      width: 24px;
+.dropdown-menu {
+  border-radius: 20px;
+}
+
+.dropdown-item {
+  font-weight: 600;
+  &:hover {
+    background: none;
+    color: $primary !important;
+  }
+}
+
+.social-link__item {
+  height: 32px;
+  width: 32px;
+  .social-link {
+    background: $social-icon-background;
+    svg {
+      height: 32px;
+      width: 32px;
     }
   }
 }
 
-// .navbar-brand {
-//   margin-right: 32px;
-// }
+.change-lang {
+  background: none;
+  border: none;
+  &:hover,
+  &:active {
+    background: none;
+    border: none;
+  }
+}
 
-// .navbar-nav {
-//   gap: 32px;
-// }
+.authorization {
+  .btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.62;
+    &:nth-child(1) {
+      width: 153px;
+      background: rgb(83, 95, 230);
+      background: linear-gradient(
+        121deg,
+        rgba(83, 95, 230, 0.84) 0%,
+        rgba(32, 193, 207, 0.57) 100%
+      );
+      border-radius: 30px 16px 16px 16px;
+    }
 
-// .social__items {
-//   display: flex;
-//   gap: 8px;
-//   justify-content: center;
-//   li {
-//     a {
-//       padding: 10px;
-//       background: $social-icon-background;
-//     }
-//   }
-// }
+    &:nth-child(2) {
+      width: 98px;
+      border: 1px solid;
+      border-radius: 16px;
+
+      /** TEXT GRADIENT */
+      color: #535fe6;
+      background-image: -webkit-linear-gradient(0deg, #535fe6 0%, #20c1cf 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+
+      &:hover {
+        /** TEXT GRADIENT */
+        color: #fff;
+        background-image: -webkit-linear-gradient(0deg, #fff 0%, #fff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}

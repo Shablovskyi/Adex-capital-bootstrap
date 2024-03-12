@@ -1,27 +1,64 @@
 @import "./bootstrap";
 @import "./variables";
 
-body{
-  font-family: 'Gilroy';
+body {
+  font-family: "Gilroy";
   background-color: $main-background;
 }
 
-menu, ul{
+menu,
+ul {
   padding: 0;
   margin: 0;
 }
 
-li{
+li {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
-} 
+}
 
-p{
+p,
+a {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
   color: $white;
+}
+
+input {
+  &::placeholder {
+    color: $gray !important;
+  }
+}
+
+.rounded-6 {
+  border-radius: 0.75rem;
+}
+
+.p-6 {
+  padding: 4rem;
+}
+
+.ps-6 {
+  padding-left: 2.37rem;
+}
+
+.py-6 {
+  padding: 2.5rem 0 2.5rem;
+}
+
+.pt-6 {
+  padding-top: 5.87rem;
+}
+
+.pe-6 {
+  padding-right: 5rem;
 }
